@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0a0e1a;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Anomaly card slide-in animation */
+.anomaly-slide-in {
+  animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Custom scrollbar for anomaly feed */
+.anomaly-feed::-webkit-scrollbar {
+  width: 6px;
+}
+
+.anomaly-feed::-webkit-scrollbar-track {
+  background: #111827;
+  border-radius: 3px;
+}
+
+.anomaly-feed::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 3px;
+}
+
+/* Health score number transition */
+.health-score-value {
+  transition: color 0.5s ease;
+}
+
+/* Progress bar smooth animation */
+.progress-fill {
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
